@@ -2,7 +2,7 @@ version: '3.7'
 services:
     web:
         build: .
-        container_name: "xamp-php"
+        container_name: "php8"
         volumes:
             - "./html/:/var/www/html"
         privileged: true
@@ -22,4 +22,4 @@ services:
             - MYSQL_PASSWORD=test_password
         ports:
             - "4306:3306"
-        container_name: xamp-db
+        container_name: php8-db
