@@ -1,7 +1,7 @@
 <?php
 try {
-    $dsn = 'mysql:host=mysql;dbname=test_db;charset=utf8';
-    $db = new PDO($dsn, 'test_user', 'test_password');
+    $dsn = 'mysql:host=mysql;dbname=test_database;charset=utf8';
+    $db = new PDO($dsn, 'test_user', 'root_password');
 
     $sql = 'SELECT version();';
     $contact = $db->prepare($sql);
